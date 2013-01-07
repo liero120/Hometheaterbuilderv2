@@ -1,0 +1,319 @@
+﻿body {  
+    background:url("../Images/strip1.jpg") repeat; 
+    font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    margin:0px;
+   
+}
+.page
+{
+    width: 100%;
+    background-color: #fff;
+   
+    border: 1px solid #496077;
+}
+.header
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background: #4b6c9e;
+    width: 100%;
+}
+.banner
+{
+     background:url("../Images/banner-bar.png") no-repeat;    
+     width:100%;
+     height:45px;
+     background-color:#3B3B3B;
+     float:left;
+}
+.hederlink
+{
+   background:url("../Images/Home-Page---Entertainment-C11.jpg") no-repeat;   
+    width:202px;
+     height:46px;  
+}
+.linkmyacct
+{
+    color:White;
+    font-size:14px;    
+    margin-right:25px;
+     text-decoration:none;
+     padding-top:10px;
+}
+
+.lnkmyaccount
+{
+    background-color:#29AAE3;
+    float:right;    
+    height:65%;
+    margin:2px;
+    padding-top:10px;
+    width:66px;
+    padding-left:10px;
+   
+}
+.lnkwmyaccount
+{    
+    
+    height:65%;    
+    float:right;  
+    color:White;
+    text-decoration:none;
+}
+.lnklmyaccount
+{    
+    
+    height:65%;    
+    float:left;  
+    color:White;
+    text-decoration:none;
+    
+}
+
+.SearchBox
+{
+   -moz-border-radius: 15px;
+   border-radius: 15px;
+    border:solid 1px black;
+    padding:5px;
+}
+
+.headermenu
+{
+   float:left;
+    background-color:#1E1E1E;    
+    width:100%;
+    float:left;
+     /*background-color: #1E1E1E;
+    float: left;
+    height: 0;
+    margin-left: 125px;
+    position: absolute;
+    top: 40px;
+    width: 100%;*/
+   
+    
+}
+
+.headerorange
+{
+     background:url("../Images/Menu-Bar---Footer-Orange.jpg") no-repeat;    
+     width:100%;
+     height:40px;
+     background-color:#F8931F;
+     float:left;
+     margin-top: -5px;
+}
+
+.main
+{
+    float:left;
+    background:url("../Images/background-reel.png") no-repeat right ;    
+    width:100%;
+     
+}
+.headerMenuDiv
+{
+  
+    float:left;
+    width:95px;
+    margin:8px;
+}
+.headerImageDiv
+{
+       
+    z-index:12;
+}
+.headerTextDiv
+{
+    color:White;
+    z-index:-12;
+    margin-top:-40px;
+    margin-left:40px;
+}
+
+
+.joinBt
+{
+      background:url("../Images/red.jpg") no-repeat;    
+      height:45%;
+      
+}
+.registerDiv
+{
+   /* background-color: #20201e;*/
+     height: 15%;
+      width: 100%;
+}
+.registerMainDiv
+{
+   background-color: #e6e6e6 ; 
+   float: left;
+ 
+    border-radius: 6px 6px 6px 6px ;
+}
+.txtUser
+{
+    float: left; 
+    height: 100%;
+     margin-left: 78px; 
+     margin-top: -20px;
+}
+.txtEmail
+{
+    float: left; 
+    height: 100%;
+     margin-left: 15px;
+      margin-top: -20px;
+}
+.txtPassword
+{
+   float: left;
+    height: 100%;
+     margin-left: 15px;
+      margin-top: -20px; 
+}
+.joinDiv
+{
+    float: left;
+     height: 100%;
+    
+       margin-top: -20px;
+}
+.registerUpperDiv
+{
+   width:100% ; 
+}
+.registerLowerDiv
+{
+   width:100%; 
+}
+.CheckBoxDiv
+{
+    margin-left: 7px;
+    
+    margin-top: 12px;
+}
+.LinkbuttonDiv
+{
+    float: right; 
+    height: 100%;
+    
+}
+.registerLabel
+{
+    margin-left: 7px;
+     margin-top: 12px;
+}
+
+.ulSubMenu
+{
+    width:96%;
+    float:left;
+    color:White;
+    
+}
+
+.ulSubMenu li
+{    
+  
+   font-size:18px;
+   float:left;
+   text-transform:uppercase;
+   list-style-type:none;
+   margin-bottom:4px;
+   margin-right:10px;
+  
+}
+
+
+/* Footer Div*/
+
+.boxMainDiv
+{
+    
+     width:100%; 
+     height:100%;
+}
+.FormNewDiv
+{
+    width:50%; 
+}
+.newsHeading
+{
+   background-color: #8F9091;
+    border-radius: 2px 2px 2px 2px;
+    float: left;
+    height: 5%;
+    margin-left: 180px;
+    margin-top: 18px;
+    width: 42%;
+    color:White;
+}
+.newsbox
+{
+   background-color: #E6E6E6;
+    float: left;
+    height: 100%;
+    margin-left: 180px;
+    width: 42%;
+    border-radius: 0 0 2px 2px;
+    margin-bottom:20px;
+}
+.buildsHeading
+{
+      background-color: #8F9091;
+    border-radius: 2px 2px 2px 2px;
+    float: right;
+    height: 5%;
+    margin-right: 231px;
+    margin-top: 18px;
+    width: 27%;
+    color:White;
+}
+.buildsbox
+{
+     background-color: #E6E6E6;
+    float: right;
+    height: 46%;
+    margin-right: 231px;
+    width: 27%;
+    border-radius: 0 0 2px 2px;
+}
+.priceHeading
+{
+    
+     background-color: #8F9091;
+    border-radius: 2px 2px 2px 2px;
+    float: right;
+    height: 5%;
+    margin-right: 231px;
+    margin-top: 16px;
+    width: 27%;
+    color:White;
+}
+.pricebox
+{
+     background-color: #E6E6E6;
+    float: right;
+    height: 46%;
+    margin-right: 231px;
+    width: 27%;
+    border-radius: 0 0 2px 2px;
+}
+.first
+{
+      background:url("../Images/Menu Bar - TV -02.png") no-repeat; 
+      height:120px;
+      width:100%;
+}
+.whileImage
+{
+    width:52px;
+	height:53px;
+    background-image:url(../Images/icon-preview-bar.png);
+}
+
+

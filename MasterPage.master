@@ -1,0 +1,151 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true"%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<script runat="server">
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+     <%--<link href="css/mainSite.css" rel="stylesheet" type="text/css" />--%>
+    <%--<link href="css/basic.css" rel="stylesheet" type="text/css" />--%>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/general.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/ie6.css" media="all" />
+    <script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.2.6.min.js"></script>
+    <script type="text/javascript" src="scripts/tabs.js"></script>
+   
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div>    
+        <table width="100%" border="0"  bgcolor="#000000" cellpadding="0px" cellspacing="0px">
+      <tr>
+        <td align="left" width="33.3%" style="background: #3A3A3A" ></td>
+        <td align="center" width="900px" style="height: 45px; background:url('images/banner-bar.png') no-repeat; vertical-align: middle" position="fixed";>
+            <%--<img alt="" src="images/banner-bar.png" width="901" height="45"/>--%>
+            <div id="loginbutton" style="position: relative; top: 0px; width: 55px; height: 43px; left: 835px; background: #29ABE2; vertical-align: middle; float: left;";>
+            <br />
+            <font color="White"><b>SIGN UP</b></font>
+            </div>
+            <div id="Div1" style="position: relative; top: 0px; width: 55px; height: 43px; left: 700px; background: transparent; vertical-align: middle; z-index: 100; float: left;";>
+            <br />
+            <font color="White"><b>LOG IN</b></font>
+            </div>
+            <div id="Div2" style="position: relative; top: 0px; width: 100px; height: 43px; left: 535px; background: transparent; vertical-align: middle; z-index: 100; float: left;";>
+            <br />
+            <font color="White"><b>MY ACCOUNT</b></font>
+            </div>
+            <div id="Div3" style="position: relative; top: 16px; width: 158px; height: 15px; left: 0px; background: transparent; vertical-align: middle; z-index: 100; float: left;";>        
+                <asp:TextBox ID="TextBox1" runat="server" BorderWidth="0px" AutoCompleteType="Search" width="158px" Height="14px"></asp:TextBox>
+            </div>
+        </td>
+        <td align="right" width="33.3%" style="background: #3A3A3A"></td>
+
+      </tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <tr>
+      <td></td>
+        <td style="height: 15px">
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td></td>
+        <td align="center" style="vertical-align: top; z-index: 99">
+        <div id="container" style="position: relative; top: 0px;">
+		    <ul class="menu" >
+			    <li id="htpc" class="active"> 
+                    <img id="htpc" src="images/htpc_icon-06-06.png" width="30px" height="53px" /> 
+                    <br />HTPC
+                </li>
+                <li id="mediaplayer" class="active">
+                <img id="mediaplayer" src="images/htpc_icon-06-06.png"width="30" height="53" /> 
+                    <br />Media Player</li>
+                <li id="television" class="active">
+                <img id="television" src="images/htpc_icon-06-06.png" width="30" height="53" /> 
+                    <br />
+                    Television</li>
+                <li id="audio" class="active">
+                <img id="audio" src="images/htpc_icon-06-06.png" width="30" height="53" /> 
+                    <br />
+                    Audio</li>
+                <li id="control" class="active">
+                <img id="control" src="images/htpc_icon-06-06.png" width="30" height="53" /> 
+                    <br />
+                    Control</li>
+                <li id="forum" class="active">
+                <img id="forum" src="images/htpc_icon-06-06.png" width="30" height="53" /> 
+                    <br />
+                    Forum</li>
+                <li id="wishlist" class="active">
+                <img id="wishlist" src="images/htpc_icon-06-06.png" width="30" height="53" /> 
+                    <br />
+                    Wish list</li>
+		    </ul>
+		    <span class="clear"></span>
+		    <div class="content htpc">
+			    <h1>
+				    htpc
+	            </h1>
+		    </div>
+            <div class="content mediaplayer">
+			    <h1>
+				    Mediaplayer
+	            </h1>
+		    </div>
+            <div class="content television">
+			    <h1>
+				    Television
+	            </h1>
+		    </div>
+             <div class="content audio">
+			    <h1>
+				    Audio
+	            </h1>
+		    </div>
+            <div class="content control">
+			    <h1>
+				    control
+	            </h1>
+		    </div>
+            <div class="content forum">
+			    <h1>
+				    forum
+	            </h1>
+		    </div>
+            <div class="content wishlist">
+			    <h1>
+				    wish list
+	            </h1>
+		    </div>
+	    </div>    
+    
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td height="10px" style="background: #F7931E"></td>
+      <td height="10px" style="background: #F7931E"></td>
+      <td height="10px" style="background: #F7931E"></td>
+      </tr>
+    </table>
+    </div>
+    </div>
+
+     <asp:ContentPlaceHolder id="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+
+    </form>
+</body>
+</html>

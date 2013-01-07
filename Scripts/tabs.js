@@ -33,7 +33,7 @@ $(document).ready(function(){
 					}
 					else
 					{
-						$("div." + mylinks[i]).fadeIn();
+					    $("div." + mylinks[i]).fadeIn();
 					}
 				}			
 			break;
@@ -187,7 +187,7 @@ $(document).ready(function(){
 					}
 					else
 					{
-						$("#" + mylinks[i]).addClass("active");
+					    $("#" + mylinks[i]).addClass("active");
 					}
 				}
 				

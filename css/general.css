@@ -34,6 +34,7 @@ html,body{
 a{
 	text-decoration: none;
 }
+
 /******* GENERAL RESET *******/
 /******* LOGO *******/
 #logo{
@@ -62,7 +63,8 @@ a{
 	display: block;
 	padding: 5px 10px 5px 10px;
 	background: #efefef;
-	margin-bottom: -1px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	border: 1px solid #d0ccc9;
 	border-width: 1px 1px 1px 1px;
 	position: relative;
@@ -74,8 +76,9 @@ a{
 #container ul.menu li.active{
 	background: #F7931E;
 	top: 1px;
-	border-bottom: 0;
+	border-bottom: 0 px;
 	color: #F5F5F5  ;
+	
 }
 /******* /MENU *******/
 /******* CONTENT *******/
@@ -83,16 +86,19 @@ a{
 	margin: 0pt auto;
 	background: #efefef;
 	background: #fff;
-	border: 1px solid #d0ccc9;
+	/*border: 1px solid #d0ccc9;*/
 	text-align: left;
 	padding: 0px;
 	padding-bottom: 0px;
 	font-size: 11px;
+	position: absolute;
+	width: 900px;
+	height: 20px;
 }
 .content h1{
 	line-height: auto;
 	vertical-align: middle;
-	height: 31px;
+	height: 20px;
 	/*padding: 10px 10px 10px 52px;*/
 	font-size: 16px;
 }

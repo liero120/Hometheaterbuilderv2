@@ -178,32 +178,48 @@
         <div id="container" style="position: relative; top: 0px;">
 		    <ul class="menu" >
 			    <li id="htpc" class="active"> 
-                    <img id="htpc" src="images/htpc_icon-06-06.png" width="30px" height="53px" /> 
-                    <br />HTPC
+                    <div id="htpc" style="height: 53px; margin-bottom: 0px">
+                    <img id="htpc" src="images/htpc_icon-06-06.png" /> 
+                    </div>
+                    <div style="position:relative; padding-top: 5px">HTPC</div>
                 </li>
                 <li id="mediaplayer" class="active">
-                <img id="mediaplayer" src="images/htpc_icon-06-06.png"width="30" height="53" /> 
-                    <br />Media Player</li>
+                <div id="mediaplayer" style="height: 53px; margin-bottom: 0px">
+                    <br /><br />
+                    <img id="mediaplayer" src="images/media_player_icon-06.png" /> 
+                    </div>
+                    <div style="position:relative; padding-top: 5px">Media Player</div>
+                    </li>
                 <li id="television" class="active">
-                <img id="television" src="images/htpc_icon-06-06.png" width="30" height="53" /> 
+                <div id="television" style="height: 53px; margin-bottom: 0px">
                     <br />
-                    Television</li>
+                    <img id="television" src="images/TV-07.png"/> 
+                    </div>
+                    <div style="position:relative; padding-top: 5px">Television</div></li>
                 <li id="audio" class="active">
-                <img id="audio" src="images/htpc_icon-06-06.png" width="30" height="53" /> 
+                <div id="audio" style="height: 53px; margin-bottom: 0px">
                     <br />
-                    Audio</li>
+                    <img id="audio" src="images/audio-08.png"/> 
+                    </div>
+                    <div style="position:relative; padding-top: 5px">Audio</div></li>
                 <li id="control" class="active">
-                <img id="control" src="images/htpc_icon-06-06.png" width="30" height="53" /> 
+                <div id="control" style="height: 53px; margin-bottom: 0px">
                     <br />
-                    Control</li>
+                    <img id="control" src="images/control-09.png"/> 
+                    </div>
+                    <div style="position:relative; padding-top: 5px">Control</div></li>
                 <li id="forum" class="active">
-                <img id="forum" src="images/htpc_icon-06-06.png" width="30" height="53" /> 
+                <div id="forum" style="height: 53px; margin-bottom: 0px">
                     <br />
-                    Forum</li>
+                    <img id="forum" src="images/forum-10.png"/> 
+                    </div>
+                    <div style="position:relative; padding-top: 5px">Forum</div></li>
                 <li id="wishlist" class="active">
-                <img id="wishlist" src="images/htpc_icon-06-06.png" width="30" height="53" /> 
+                <div id="wishlist" style="height: 53px; margin-bottom: 0px">
                     <br />
-                    Wish list</li>
+                    <img id="wishlist" src="images/wishlist-11.png"/> 
+                    </div>
+                    <div style="position:relative; padding-top: 5px">Wish list</div></li>
 		    </ul>
 		    <span class="clear"></span>
 		    <div class="content htpc">

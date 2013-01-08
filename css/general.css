@@ -62,9 +62,10 @@ a{
 	font-weight: 700;
 	display: block;
 	padding: 5px 10px 5px 10px;
-	background: #efefef;
+    background-image: url (image/tile-12.png);
 	margin-top: 10px;
 	margin-bottom: 10px;
+	vertical-align: middle;
 	border: 1px solid #d0ccc9;
 	border-width: 1px 1px 1px 1px;
 	position: relative;

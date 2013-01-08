@@ -22,7 +22,7 @@
     <link rel="stylesheet" type="text/css" href="css/general.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/ie6.css" media="all" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="css/jquery-ui-1.9.2.custom.css" media="all" />
     <script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <script type="text/javascript" src="scripts/tabs.js"></script>
 
@@ -36,6 +36,12 @@
             password = $("#password"),
             allFields = $([]).add(name).add(email).add(password),
             tips = $(".validateTips");
+
+            var namelogin = $("#name"),
+            emaillogin = $("#email"),
+            passwordlogin = $("#password"),
+            allFieldslogin = $([]).add(name).add(email).add(password),
+            tipslogin = $(".validateTips");
 
             function updateTips(t) {
                 tips
@@ -111,6 +117,20 @@
                 $("#dialog").dialog("open");
                 return false;
             });
+
+             $("#LOGIN").dialog({
+                autoOpen: false,
+                //show: "puff",
+                //hide: "puff",
+                height: "185",
+                width: "210",
+                });
+
+                $("#openerlogin").click(function () {
+                $("#LOGIN").dialog("open");
+                return false;
+            });
+
         });
     </script>
    
@@ -128,7 +148,7 @@
             <br />
             <div ><font color="White"><b>SIGN UP</b></font></div>
             </div>
-            <div id="Div1" style="position: relative; top: 0px; width: 55px; height: 43px; left: 700px; background: transparent; vertical-align: middle; z-index: 100; float: left;";>
+            <div id="openerlogin" style="position: relative; top: 0px; width: 55px; height: 43px; left: 700px; background: transparent; vertical-align: middle; z-index: 100; float: left;";>
             <br />
             <font color="White"><b>LOG IN</b></font>
             </div>
@@ -235,9 +255,10 @@
     </div>
     </div>
 
-    <div id="dialog" title="SIGN UP">
+    <%--/*******************SIGN UP BOX*******************/--%>
+    <div id="dialog" title="SIGN UP" style="vertical-align: middle; left: auto">
     <p class="validateTips">All form fields are required.</p>
- 
+    <br />
     <form>
     <fieldset>
         <label for="name">Name</label>
@@ -250,6 +271,25 @@
     </form>
     </div>
 
+     <%--/*****************END SIGN UP BOX*****************/--%>
+
+
+     <%--/*******************LOGIN BOX*******************/--%>
+      <div id="LOGIN" title="USER LOG IN">
+    <p class="validateTips">Please enter your login below.</p>
+ 
+    <form>
+    <fieldset>
+        <label for="emailL">Email</label>
+        <input type="text" name="email" id="Text2" value="" class="text ui-widget-content ui-corner-all" />
+        <label for="passwordL">Password</label>
+        <input type="password" name="password" id="password1" value="" class="text ui-widget-content ui-corner-all" />
+        <br />
+        <label>I forgot my password</label>
+    </fieldset>
+    </form>
+    </div>
+     <%--/*****************END LOGIN BOX*****************/--%>
 
      <asp:ContentPlaceHolder id="head" runat="server">
 

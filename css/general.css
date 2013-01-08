@@ -86,7 +86,7 @@ a{
 .content{
 	margin: 0pt auto;
 	background: #efefef;
-	background: #fff;
+	
 	/*border: 1px solid #d0ccc9;*/
 	text-align: left;
 	padding: 0px;
@@ -134,7 +134,7 @@ a{
 
 /******* LINKS *******/
 .content.htpc h1{
-	background: #F7931E;
+	background: #87adfc;
 }
 .content.htpc{
 	display: none;
@@ -146,7 +146,7 @@ a{
 
 /******* LINKS *******/
 .content.mediaplayer h1{
-	background: #F7931E;
+	background: #87adfc;
 }
 .content.mediaplayer{
 	display: none;
@@ -158,7 +158,7 @@ a{
 
 /******* LINKS *******/
 .content.television h1{
-	background: #F7931E;
+	background: #87adfc;
 }
 .content.television{
 	display: none;
@@ -170,7 +170,7 @@ a{
 
 /******* LINKS *******/
 .content.audio h1{
-	background: #F7931E;
+	background: #87adfc;
 }
 .content.audio{
 	display: none;
@@ -182,7 +182,7 @@ a{
 
 /******* LINKS *******/
 .content.control h1{
-	background: #F7931E;
+	background: #87adfc;
 }
 .content.control{
 	display: none;
@@ -194,7 +194,7 @@ a{
 
 /******* LINKS *******/
 .content.forum h1{
-	background: #F7931E;
+	background: #87adfc;
 }
 .content.forum{
 	display: none;
@@ -206,7 +206,7 @@ a{
 
 /******* LINKS *******/
 .content.wishlist h1{
-	background: #F7931E;
+	background: #87adfc;
 }
 .content.wishlist{
 	display: none;

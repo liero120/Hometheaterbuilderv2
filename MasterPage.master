@@ -244,17 +244,17 @@
 		    </div>
             <div class="content control">
 			    <h1>
-				    control
+				    Control
 	            </h1>
 		    </div>
             <div class="content forum">
 			    <h1>
-				    forum
+				    Forum
 	            </h1>
 		    </div>
             <div class="content wishlist">
 			    <h1>
-				    wish list
+				    Wish list
 	            </h1>
 		    </div>
 	    </div>    
@@ -302,6 +302,14 @@
         <input type="password" name="password" id="password1" value="" class="text ui-widget-content ui-corner-all" />
         <br />
         <label>I forgot my password</label>
+
+         <%--FormsAuthenticationTicket ticket = new FormsAuthenticationTicket(1, Form.email, DateTime.Now, DateTime.Now.AddMinutes(30), false, "", "/");
+                    string strEncTicket = FormsAuthentication.Encrypt(ticket);
+                    HttpCookie authCookie = new HttpCookie(".YAFNET_Authentication", strEncTicket);
+                    authCookie.Path = "/";
+                    HttpContext.Response.Cookies.Add(authCookie);--%>
+
+
     </fieldset>
     </form>
     </div>

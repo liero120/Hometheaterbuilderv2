@@ -157,7 +157,11 @@
             <font color="White"><b>MY ACCOUNT</b></font>
             </div>
             <div id="Div3" style="position: relative; top: 16px; width: 158px; height: 15px; left: 0px; background: transparent; vertical-align: middle; z-index: 100; float: left;";>        
-                <asp:TextBox ID="TextBox1" runat="server" BorderWidth="0px" AutoCompleteType="Search" width="158px" Height="14px"></asp:TextBox>
+                <asp:TextBox ID="TextBox1" runat="server" BorderWidth="0px" AutoCompleteType="Search" width="160px" Height="14px" value=" search" 
+                style="font-style:italic; color:Gray;"
+                onfocus="value=''; font-style='normal'; color:Black;" 
+                onblur="value=' search'; font-style:italic; color:Gray;"       
+                ></asp:TextBox>
             </div>
         </td>
         <td align="right" width="33.3%" style="background: #3A3A3A"></td>

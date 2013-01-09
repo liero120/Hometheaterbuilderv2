@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="ftp://ftp.smarterasp.net/" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Home Theater Builder" publishMethod="FTP" replaceMatchingFiles="True" userName="testaccount" savePWD="True" userPWD="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArkhDbsbLg0+zMT7qtNgqWwAAAAACAAAAAAADZgAAwAAAABAAAAAj+ZsF5MxDBzNb+Ztl2H7FAAAAAASAAACgAAAAEAAAABzJvXrIWGJ3xtj4nP4dyDooAAAAYPnYSYtyzVF1UL03lrkTKwPU/nbIm7Mr5z+RXAmd0MbP7AiQ0dU6hxQAAACJ4dpfONmWa5rSfCLNQYIiEOFn+g==" SelectedForPublish="True">
+    <file relUrl="bin/Hometheaterbuilderv2.dll" publishTime="01/09/2013 09:33:36" />
+    <file relUrl="Web.config" publishTime="01/09/2013 09:29:46" />
+    <file relUrl="bin/Hometheaterbuilderv2.pdb" publishTime="01/09/2013 09:33:36" />
+    <file relUrl="default.aspx" publishTime="01/09/2013 09:33:33" />
+    <file relUrl="MasterPage.master" publishTime="01/09/2013 09:18:34" />
+  </publishProfile>
+</publishData>

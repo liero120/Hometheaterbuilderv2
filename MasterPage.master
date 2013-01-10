@@ -27,7 +27,7 @@
     <script type="text/javascript" src="scripts/tabs.js"></script>
     <script src="//connect.facebook.net/en_US/all.js"></script>
 
-    <script>
+    <script language=javascript>
         // increase the default animation speed to exaggerate the effect
         $.fx.speeds._default = 1000;
         $(function () {
@@ -123,7 +123,7 @@
                 autoOpen: false,
                 //show: "puff",
                 //hide: "puff",
-                height: "185",
+                height: "210",
                 width: "210",
                 });
 
@@ -139,7 +139,7 @@
 <body>
 <%--Facebook login code--%>
     <div id="fb-root"></div>
-    <script>
+    <script type="text/javascript">
         // Additional JS functions here
         window.fbAsyncInit = function () {
             FB.init({
@@ -152,18 +152,7 @@
 
             // Additional init code here
 
-        };
-
-        // Load the SDK Asynchronously
-        (function (d) {
-            var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-            if (d.getElementById(id)) { return; }
-            js = d.createElement('script'); js.id = id; js.async = true;
-            js.src = "//connect.facebook.net/en_US/all.js";
-            ref.parentNode.insertBefore(js, ref);
-        } (document));
-
-        FB.getLoginStatus(function(response) {
+            FB.getLoginStatus(function(response) {
             if (response.status === 'connected') {
                 // connected
             } else if (response.status === 'not_authorized') {
@@ -173,18 +162,40 @@
                 // not_logged_in
                 login();
             }
-});
-};
+            });
+        };
 
-function login() {
-    FB.login(function(response) {
-        if (response.authResponse) {
-            // connected
-        } else {
-            // cancelled
-        }
-    });
-}
+        function login() {
+            FB.login(function(response) {
+                if (response.authResponse) {
+                    // connected 
+                    testAPI();
+                } else {
+                    // cancelled
+                }
+            });           
+
+        };
+        
+        function testAPI() {
+            console.log('Welcome!  Fetching your information.... ');
+            FB.api('/me', function (response) {
+                console.log('Good to see you, ' + response.name + '.');
+                });
+            };
+
+            // Load the SDK Asynchronously
+            (function (d) {
+                var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+                if (d.getElementById(id)) { return; }
+                js = d.createElement('script'); js.id = id; js.async = true;
+                js.src = "//connect.facebook.net/en_US/all.js";
+                ref.parentNode.insertBefore(js, ref);
+            } (document));
+
+        
+
+
     </script>
 
     <form id="form1" runat="server">
@@ -361,9 +372,13 @@ function login() {
         <label for="passwordL">Password</label>
         <input type="password" name="password" id="password1" value="" class="text ui-widget-content ui-corner-all" />
         <br />
+        <div >
+            <img onclick="testAPI();" src="images/fb-login-button.png"/>
+        </div>
+        <br />
         <label>I forgot my password</label>
 
-        <image src="images/fb-login-button.png></image>
+        
          <%--FormsAuthenticationTicket ticket = new FormsAuthenticationTicket(1, Form.email, DateTime.Now, DateTime.Now.AddMinutes(30), false, "", "/");
                     string strEncTicket = FormsAuthentication.Encrypt(ticket);
                     HttpCookie authCookie = new HttpCookie(".YAFNET_Authentication", strEncTicket);

@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/jquery-ui-1.9.2.custom.css" media="all" />
     <script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <script type="text/javascript" src="scripts/tabs.js"></script>
+    <script src="//connect.facebook.net/en_US/all.js"></script>
 
     <script>
         // increase the default animation speed to exaggerate the effect
@@ -136,6 +137,56 @@
    
 </head>
 <body>
+<%--Facebook login code--%>
+    <div id="fb-root"></div>
+    <script>
+        // Additional JS functions here
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '464520490272281', // App ID
+                channelUrl: '//hometheaterbuilder.net', // Channel File
+                status: true, // check login status
+                cookie: true, // enable cookies to allow the server to access the session
+                xfbml: true  // parse XFBML
+            });
+
+            // Additional init code here
+
+        };
+
+        // Load the SDK Asynchronously
+        (function (d) {
+            var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement('script'); js.id = id; js.async = true;
+            js.src = "//connect.facebook.net/en_US/all.js";
+            ref.parentNode.insertBefore(js, ref);
+        } (document));
+
+        FB.getLoginStatus(function(response) {
+            if (response.status === 'connected') {
+                // connected
+            } else if (response.status === 'not_authorized') {
+                // not_authorized
+                login();
+            } else {
+                // not_logged_in
+                login();
+            }
+});
+};
+
+function login() {
+    FB.login(function(response) {
+        if (response.authResponse) {
+            // connected
+        } else {
+            // cancelled
+        }
+    });
+}
+    </script>
+
     <form id="form1" runat="server">
     <div>
         <div>    
@@ -275,6 +326,11 @@
     </div>
     </div>
 
+    <asp:ContentPlaceHolder id="bodycontent" runat="server">
+
+    </asp:ContentPlaceHolder>
+
+
     <%--/*******************SIGN UP BOX*******************/--%>
     <div id="dialog" title="SIGN UP" style="vertical-align: middle; left: auto">
     <p class="validateTips">All form fields are required.</p>
@@ -307,6 +363,7 @@
         <br />
         <label>I forgot my password</label>
 
+        <image src="images/fb-login-button.png></image>
          <%--FormsAuthenticationTicket ticket = new FormsAuthenticationTicket(1, Form.email, DateTime.Now, DateTime.Now.AddMinutes(30), false, "", "/");
                     string strEncTicket = FormsAuthentication.Encrypt(ticket);
                     HttpCookie authCookie = new HttpCookie(".YAFNET_Authentication", strEncTicket);
@@ -319,10 +376,10 @@
     </div>
      <%--/*****************END LOGIN BOX*****************/--%>
 
-     <asp:ContentPlaceHolder id="head" runat="server">
-
-    </asp:ContentPlaceHolder>
-
     </form>
+ 
 </body>
+
+   
+
 </html>

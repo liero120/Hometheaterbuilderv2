@@ -1,12 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="Hometheaterbuilderv2.WebForm1" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
-<head></head>
-<body style="background-color:Black">
+<asp:Content ID="Content1" ContentPlaceHolderID="bodycontent" runat="server">
 
-<image src="images/coming soon.png"></image>
+<div style="background-color:Black">
 
-</body>
+<img src="images/coming soon.png"/>
+
+</div>
 
 
 </asp:Content>

@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="css/jquery-ui-1.9.2.custom.css" media="all" />
     <script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <script type="text/javascript" src="scripts/tabs.js"></script>
-    <script src="//connect.facebook.net/en_US/all.js"></script>
+    
 
     <script language=javascript>
         // increase the default animation speed to exaggerate the effect
@@ -132,6 +132,9 @@
                 return false;
             });
 
+     
+
+
         });
     </script>
    
@@ -152,18 +155,23 @@
 
             // Additional init code here
 
-            FB.getLoginStatus(function(response) {
-            if (response.status === 'connected') {
-                // connected
-            } else if (response.status === 'not_authorized') {
-                // not_authorized
-                login();
-            } else {
-                // not_logged_in
-                login();
-            }
+            FB.getLoginStatus(function (response) {
+                if (response.status === 'connected') {
+                    // connected
+                    
+                    FB.api('/me', function (response) {
+                        document.getElementById('loginlabel').innerHTML = response.name;
+                    });
+
+                } else if (response.status === 'not_authorized') {
+                    // not_authorized
+                    
+                } else {
+                    // not_logged_in
+                    
+                }
             });
-    };
+        };
 
         function login() {
             FB.login(function(response) {
@@ -210,9 +218,9 @@
             <br />
             <div ><font color="White"><b>SIGN UP</b></font></div>
             </div>
-            <div id="openerlogin" onclick="FB.login()" style="position: relative; top: 0px; width: 55px; height: 43px; left: 700px; background: transparent; vertical-align: middle; z-index: 100; float: left;";>
+            <div id="openerlogin" style="position: relative; top: 0px; width: 55px; height: 43px; left: 700px; background: transparent; vertical-align: middle; z-index: 100; float: left;";>
             <br />
-            <font color="White"><b>LOG IN</b></font>
+            <font color="White"><b><label id="loginlabel">LOG IN</label></b></font>
             </div>
             <div id="Div2" style="position: relative; top: 0px; width: 100px; height: 43px; left: 535px; background: transparent; vertical-align: middle; z-index: 100; float: left;";>
             <br />
@@ -373,7 +381,7 @@
         <input type="password" name="password" id="password1" value="" class="text ui-widget-content ui-corner-all" />
         <br />
         <div >
-            <img onclick="testAPI();" src="images/fb-login-button.png"/>
+            <img id="facebook-jssdk" onclick="login();" src="images/fb-login-button.png"/>
         </div>
         <br />
         <label>I forgot my password</label>

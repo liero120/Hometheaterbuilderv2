@@ -163,7 +163,7 @@
                 login();
             }
             });
-        };
+    };
 
         function login() {
             FB.login(function(response) {
@@ -198,7 +198,7 @@
 
     </script>
 
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" >
     <div>
         <div>    
         <table width="100%" border="0"  bgcolor="#000000" cellpadding="0px" cellspacing="0px">
@@ -210,7 +210,7 @@
             <br />
             <div ><font color="White"><b>SIGN UP</b></font></div>
             </div>
-            <div id="openerlogin" style="position: relative; top: 0px; width: 55px; height: 43px; left: 700px; background: transparent; vertical-align: middle; z-index: 100; float: left;";>
+            <div id="openerlogin" onclick="FB.login()" style="position: relative; top: 0px; width: 55px; height: 43px; left: 700px; background: transparent; vertical-align: middle; z-index: 100; float: left;";>
             <br />
             <font color="White"><b>LOG IN</b></font>
             </div>
@@ -365,7 +365,7 @@
       <div id="LOGIN" title="USER LOG IN">
     <p class="validateTips">Please enter your login below.</p>
  
-    <form>
+    <form on>
     <fieldset>
         <label for="emailL">Email</label>
         <input type="text" name="email" id="Text2" value="" class="text ui-widget-content ui-corner-all" />

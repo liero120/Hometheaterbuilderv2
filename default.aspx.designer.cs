@@ -10,6 +10,6 @@
 namespace Hometheaterbuilderv2 {
     
     
-    public partial class _Default {
+    public partial class WebForm1 {
     }
 }

@@ -17,7 +17,7 @@
 	position:absolute;
 	z-index:0;
 	width:739px;
-	height:341px;
+	height:313px;
 	top:-3px;
 	left:-80px;
 }
@@ -50,7 +50,7 @@
 .slides_container {
 	width:570px;
 	height:270px;
-	overflow:hidden;
+	overflow: hidden;
 	position:relative;
 	display:none;
 }
@@ -66,7 +66,7 @@
 
 #slides .slide {
 	padding:20px;
-	width:860px;
+	width:540px;
 	height:230px;
 	display:block;
 }

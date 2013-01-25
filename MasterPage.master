@@ -389,7 +389,7 @@
       </tr>
       <tr>
       <td height="20px" style="background: #F7931E"></td>
-      <td height="20px" style="background: #F7931E"></td>
+      <td height="20px" style="background: #F7931E"><div id="menubar"></div></td>
       <td height="20px" style="background: #F7931E"></td>
       </tr>
     </table>

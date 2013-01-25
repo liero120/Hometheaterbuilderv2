@@ -34,7 +34,7 @@ namespace Hometheaterbuilderv2
             HeadOrange.Style.Add("display", "none");
             HtmlGenericControl ReplaceTelvision = (HtmlGenericControl)Master.FindControl("ReplaceTelvision");
             ReplaceTelvision.Attributes.Add("style", "background:url(Images/Menu-Bar---TV-ImgeTest.jpg);height:85px;width:110px; margin-left: 20px;margin-top: 10px;");
-            HtmlGenericControl TleTextDiv = (HtmlGenericControl)Master.FindControl("TleTextDiv");
+            HtmlGenericControl TleTextDiv = (HtmlGenericControl)Master.FindControl("menubar");
             TleTextDiv.Style.Add("display", "Inline");
 
             WebRequest request = WebRequest.Create("http://www.ows.newegg.com/Stores.egg/Categories/1");

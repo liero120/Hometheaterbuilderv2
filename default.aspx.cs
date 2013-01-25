@@ -9,7 +9,7 @@ using System.IO;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Web.Script.Serialization;
-using EntertainmentBuilder.Model;
+using Hometheaterbuilderv2.Model;
 
 namespace Hometheaterbuilderv2
 {

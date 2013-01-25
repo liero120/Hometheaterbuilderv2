@@ -1,15 +1,7 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true"%>
+﻿<%@ Master Language="C#" AutoEventWireup="true" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<script runat="server">
-
-    protected void Page_Load(object sender, EventArgs e)
-    {
-
-    }
-    
-</script>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -169,6 +161,21 @@
 		        });
 
 
+                     function display(inPut) {
+
+         try {
+             //alert(inPut.textContent); 
+             var str = inPut.textContent;
+             var length = str.length - 1;
+             var Inertext = str.substr(0, length);
+             document.getElementById('HidSubItem').value = Inertext;
+             __doPostBack('__Page', 'MyCustomArgument');
+         }
+         catch (e) {
+             alert(e)
+         }
+     }
+
     </script>
    
 </head>
@@ -302,7 +309,18 @@
                     <br />
                     <img id="television" src="images/TV-07.png"/> 
                     </div>
-                    <div style="position:relative; padding-top: 5px">Television</div></li>
+                    <div style="position:relative; padding-top: 5px">Television
+                    
+                    <div class="headerMenuDiv">
+                    <a href="Televisions.aspx">
+                        <div class="headerImageDiv" id="ReplaceTelvision" runat="server">
+                        </div>
+                    </a>
+                    
+                    </div>
+                    
+                    
+                    </div></li>
                 <li id="audio" class="active">
                 <div id="audio" style="height: 53px; margin-bottom: 0px">
                     <br />

@@ -7,8 +7,6 @@ using System.Web.UI.WebControls;
 using System.Web.UI.HtmlControls;
 using System.Net;
 using System.IO;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using System.Web.Script.Serialization;
 using Hometheaterbuilderv2.Model;
 using System.Text;
@@ -32,11 +30,6 @@ namespace Hometheaterbuilderv2
             string responseFromServer = reader.ReadToEnd();
             IList<CategoryList> ctlist = new JavaScriptSerializer()
                .Deserialize<IList<CategoryList>>(responseFromServer);
-
-
-
-            JsonSerializer serializer = new JsonSerializer();
-            object result = JsonConvert.DeserializeObject(responseFromServer);
 
             IList<TelevisionsNavigation> televisionsnavigation = new JavaScriptSerializer().Deserialize<IList<TelevisionsNavigation>>(responseFromServer);
             

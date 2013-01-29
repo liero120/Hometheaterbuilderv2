@@ -150,13 +150,14 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="default.aspx" />
-    <Content Include="Television.aspx" />
+    <Content Include="Televisions.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\CategoryList.cs" />
     <Compile Include="Model\Person.cs" />
     <Compile Include="Model\TelevisionsNavigation.cs" />
     <Compile Include="Model\TelevisionsSubCat.cs" />
+    <Compile Include="NeweggAPI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
@@ -165,12 +166,12 @@
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Television.aspx.cs">
-      <DependentUpon>Television.aspx</DependentUpon>
+    <Compile Include="Televisions.aspx.cs">
+      <DependentUpon>Televisions.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Television.aspx.designer.cs">
-      <DependentUpon>Television.aspx</DependentUpon>
+    <Compile Include="Televisions.aspx.designer.cs">
+      <DependentUpon>Televisions.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

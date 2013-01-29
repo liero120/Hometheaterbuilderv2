@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="Television.aspx.cs" Inherits="Hometheaterbuilderv2.WebForm2" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="Televisions.aspx.cs" Inherits="Hometheaterbuilderv2.WebForm2" %>
 
 
 
@@ -59,15 +59,15 @@
     <%-- <legend>CategoryList</legend>--%>
      
       <div style="width:100%;float:left;border:1px;height:80px;background-color: #E6E6E6;color:White;">
-      <asp:GridView ID="Categorygrid" Width="100%" runat="server" AutoGenerateColumns="false"
-            AllowPaging="True"  CellPadding="4" ForeColor="#333333" GridLines="None"
-            PageSize="10" onpageindexchanging="Categorygrid_PageIndexChanging">
+      <asp:GridView ID="Categorygrid" Width="100%" runat="server" AutoGenerateColumns="False"
+            AllowPaging="True"  CellPadding="4" ForeColor="#333333" GridLines="None">
 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
             <Columns>
                <asp:BoundField DataField="Title" HeaderText="Title" SortExpression="Description">
                     <HeaderStyle HorizontalAlign="Left" />
                 </asp:BoundField>
-                <asp:BoundField DataField="Rating" HeaderText="Rating" SortExpression="CategoryType">
+                <asp:BoundField DataField="AverageRating" HeaderText="Rating" 
+                    SortExpression="CategoryType">
                     <HeaderStyle HorizontalAlign="Left" />
                 </asp:BoundField>
                 <asp:BoundField DataField="Discount" HeaderText="Discount" SortExpression="CategoryID">

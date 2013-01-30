@@ -9,6 +9,7 @@
                 "bJQueryUI": true,
                 "sPaginationType": "full_numbers",
                 "aoColumns": [
+                    { "mData": "Thumbnail"},
                     { "mData": "Title" },
                     { "mData": "AverageRating" },
                     { "mData": "Discount" },
@@ -39,6 +40,7 @@
                 <table id="dataTable">
                     <thead>
                         <tr>
+                            <th></th>
                             <th>Name</th>
                             <th>Rating</th>
                             <th>Discount</th>

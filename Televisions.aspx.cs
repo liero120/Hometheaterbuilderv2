@@ -61,6 +61,7 @@ namespace Hometheaterbuilderv2
                     tp.Discount = p.Discount != null ? p.Discount.ToString() : "";
                     tp.OriginalPrice = p.OriginalPrice;
                     tp.FinalPrice = p.FinalPrice;
+                    tp.Thumbnail = "<img src='" + p.Image.ThumbnailImagePath + "' />";
                     televisionProducts.Add(tp);
                 }
                 json = new JavaScriptSerializer().Serialize(televisionProducts);
@@ -76,5 +77,6 @@ namespace Hometheaterbuilderv2
         public string Discount { get; set; }
         public string FinalPrice { get; set; }
         public string AverageRating { get; set; }
+        public string Thumbnail { get; set; }
     }
 }

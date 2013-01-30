@@ -24,7 +24,9 @@
 
     <script type='text/javascript' src='Scripts/jquery.simplemodal.js'></script>
     <script type='text/javascript' src='Scripts/basic.js'></script>
-    <script type='text/javascript' src='Scripts/jquery.js'></script>
+
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.js"></script>
+    <link rel="Stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css" media="all" />
 
     <script type="text/javascript">
         // increase the default animation speed to exaggerate the effect

@@ -10,7 +10,16 @@
 namespace Hometheaterbuilderv2 {
     
     
-    public partial class WebForm2 {
+    public partial class TelevisionsPage {
+        
+        /// <summary>
+        /// scm control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.ScriptManager scm;
         
         /// <summary>
         /// UlSubMenu control.
@@ -20,41 +29,5 @@ namespace Hometheaterbuilderv2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl UlSubMenu;
-        
-        /// <summary>
-        /// HidSubItem control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField HidSubItem;
-        
-        /// <summary>
-        /// subText control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl subText;
-        
-        /// <summary>
-        /// filterDropdownlist control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList filterDropdownlist;
-        
-        /// <summary>
-        /// Categorygrid control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView Categorygrid;
     }
 }

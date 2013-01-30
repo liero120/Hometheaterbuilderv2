@@ -6,6 +6,8 @@
         $(function () {
             PageMethods.GetTelevisions(0, onGetTelevisions);
             $("#dataTable").dataTable({
+                "bJQueryUI": true,
+                "sPaginationType": "full_numbers",
                 "aoColumns": [
                     { "mData": "Title" },
                     { "mData": "AverageRating" },

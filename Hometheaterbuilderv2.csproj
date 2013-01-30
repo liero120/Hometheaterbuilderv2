@@ -151,6 +151,7 @@
     </Content>
     <Content Include="default.aspx" />
     <Content Include="Televisions.aspx" />
+    <Content Include="Forum.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\CategoryList.cs" />
@@ -172,6 +173,13 @@
     </Compile>
     <Compile Include="Televisions.aspx.designer.cs">
       <DependentUpon>Televisions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forum.aspx.cs">
+      <DependentUpon>Forum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forum.aspx.designer.cs">
+      <DependentUpon>Forum.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

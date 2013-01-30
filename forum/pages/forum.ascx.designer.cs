@@ -13,15 +13,6 @@ namespace YAF.Pages {
     public partial class forum {
         
         /// <summary>
-        /// PageLinks control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::YAF.Controls.PageLinks PageLinks;
-        
-        /// <summary>
         /// Welcome control.
         /// </summary>
         /// <remarks>
@@ -37,7 +28,7 @@ namespace YAF.Pages {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::YAF.Controls.ShoutBox ShoutBox1;
+        protected global::System.Web.UI.UserControl ShoutBox1;
         
         /// <summary>
         /// PollList control.
@@ -83,14 +74,5 @@ namespace YAF.Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::YAF.Controls.ForumIconLegend IconLegend;
-        
-        /// <summary>
-        /// SmartScroller1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::YAF.Controls.SmartScroller SmartScroller1;
     }
 }

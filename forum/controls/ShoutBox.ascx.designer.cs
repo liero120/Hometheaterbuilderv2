@@ -22,24 +22,6 @@ namespace YAF.Controls {
         protected global::System.Web.UI.WebControls.Panel shoutBoxPanel;
         
         /// <summary>
-        /// CollapsibleImageShoutBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::YAF.Controls.CollapsibleImage CollapsibleImageShoutBox;
-        
-        /// <summary>
-        /// LocalizedLabel1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::YAF.Controls.LocalizedLabel LocalizedLabel1;
-        
-        /// <summary>
         /// shoutBoxPlaceHolder control.
         /// </summary>
         /// <remarks>
@@ -47,15 +29,6 @@ namespace YAF.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.PlaceHolder shoutBoxPlaceHolder;
-        
-        /// <summary>
-        /// lblMemberchat control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::YAF.Controls.LocalizedLabel lblMemberchat;
         
         /// <summary>
         /// shoutBoxChatUpdatePanel control.

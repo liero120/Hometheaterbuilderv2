@@ -190,7 +190,7 @@
         window.fbAsyncInit = function () {
             FB.init({
                 appId: '464520490272281', // App ID
-                channelUrl: '//hometheaterbuilder.net', // Channel File
+                channelUrl: '//hometheaterbuilder.net/default.aspx', // Channel File
                 status: true, // check login status
                 cookie: true, // enable cookies to allow the server to access the session
                 xfbml: true  // parse XFBML

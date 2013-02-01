@@ -18,29 +18,32 @@ namespace Hometheaterbuilderv2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            HtmlGenericControl ReplaceTelvision = (HtmlGenericControl)Master.FindControl("ReplaceTelvision");
-            ReplaceTelvision.Attributes.Add("style", "background:url(Images/Menu-Bar---TV-ImgeTest.jpg);height:85px;width:110px; margin-left: 20px;margin-top: 10px;");
+            List<HtmlAnchor> navs = new List<HtmlAnchor>();
+            navs.Add((HtmlAnchor)Master.FindControl("navHTPC"));
+            navs.Add((HtmlAnchor)Master.FindControl("navMediaPlayer"));
+            navs.Add((HtmlAnchor)Master.FindControl("navAudio"));
+            navs.Add((HtmlAnchor)Master.FindControl("navControl"));
+            navs.Add((HtmlAnchor)Master.FindControl("navForum"));
+            navs.Add((HtmlAnchor)Master.FindControl("navWishList"));
+            foreach (HtmlAnchor nav in navs)
+            {
+                nav.Attributes["class"] += " navbutton-off";
+            }
 
             NeweggAPI api = new NeweggAPI();
             List<SubCategory> televisions = api.GetCategoryByName("Electronics").GetSubCategoryByName("Televisions").GetSubCategories();
 
-            UlSubMenu.Attributes.Add("style","list-style-type:none;");
-            int itemCount = 0;
-            foreach (SubCategory tv in televisions)
+            HtmlGenericControl ul = new HtmlGenericControl("ul");
+            ul.Attributes.Add("style", "list-style-type:none;");
+            for (int i = 0; i < televisions.Count; ++i)
             {
-                if (itemCount < 9)
-                {
-                    HtmlGenericControl li = new HtmlGenericControl("li");
-                    li.Attributes.Add("onClick", "PageMethods.GetTelevisions(this.id, onGetTelevisions);");
-                    li.Attributes.Add("style", "display:inline;");
-                    li.Attributes.Add("id", itemCount.ToString());
-                    li.InnerHtml = tv.Description;
-                    if (itemCount != 8)
-                        li.InnerHtml += " |";
-                    UlSubMenu.Controls.Add(li);
-                }
-                itemCount++;
+                HtmlGenericControl li = new HtmlGenericControl("li");
+                li.Attributes.Add("onClick", "PageMethods.GetTelevisions(this.id, onGetTelevisions);");
+                li.Attributes.Add("id", i.ToString());
+                li.InnerHtml = televisions[i].Description;
+                ul.Controls.Add(li);
             }
+            Master.FindControl("submenu").Controls.Add(ul);
         }
 
         [WebMethod]

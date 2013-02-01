@@ -1,0 +1,113 @@
+form {
+	margin: 0;
+}
+
+.search-query {
+	margin-top: 5px;
+}
+
+
+
+.navpanel {
+	padding-top: 10px;
+	background: #0f0f0f; /* Old browsers */
+	background: -moz-linear-gradient(top,  #0f0f0f 0%, #2d2929 99%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0f0f0f), color-stop(99%,#2d2929)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #0f0f0f 0%,#2d2929 99%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #0f0f0f 0%,#2d2929 99%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #0f0f0f 0%,#2d2929 99%); /* IE10+ */
+	background: linear-gradient(to bottom,  #0f0f0f 0%,#2d2929 99%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f0f0f', endColorstr='#2d2929',GradientType=0 ); /* IE6-9 */
+	border-bottom: 1px solid black;
+}
+
+.navcontainer {
+	width: 754px;
+	margin: 0 auto;
+}
+
+.navbutton {
+	padding-top: 6px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top: 2px solid black;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	box-shadow: inset 0px 0px 5px white;
+	height: 80px;
+	width: 100px;
+	text-align: center;
+	font-weight: bold;
+	float: left;
+	background: #ffd65e; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffd65e 0%, #febf04 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffd65e), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffd65e 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffd65e 0%,#febf04 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffd65e 0%,#febf04 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffd65e 0%,#febf04 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd65e', endColorstr='#febf04',GradientType=0 ); /* IE6-9 */
+	cursor: pointer;
+	color: #333;
+}
+
+.navbutton:hover {
+	color: #333;
+	text-decoration: none;
+	box-shadow: inset 0px 0px 10px #ff0;
+}
+
+.navbutton:active {
+	box-shadow: inset 0px 0px 5px black;
+}
+
+.navbutton-off {
+	background: #0f0f0f; /* Old browsers */
+	background: -moz-linear-gradient(top,  #2d2929 0%, #0f0f0f 99%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2d2929), color-stop(99%,#0f0f0f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #2d2929 0%,#0f0f0f 99%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #2d2929 0%,#0f0f0f 99%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #2d2929 0%,#0f0f0f 99%); /* IE10+ */
+	background: linear-gradient(to bottom,  #2d2929 0%,#0f0f0f 99%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d2929', endColorstr='#0f0f0f',GradientType=0 ); /* IE6-9 */
+	color: #aaa;
+}
+
+.navbutton > div {
+	height: 54px;
+	position: relative;
+}
+
+.navbutton > div > img {
+}
+
+.submenu {
+	background: #ffd65e; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffd65e 0%, #febf04 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffd65e), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffd65e 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffd65e 0%,#febf04 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffd65e 0%,#febf04 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffd65e 0%,#febf04 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd65e', endColorstr='#febf04',GradientType=0 ); /* IE6-9 */
+	box-shadow: inset 0px 3px 10px rgba(0,0,0,0.3);
+	border-top: 1px solid #787878;
+	padding-top: 4px;
+}
+
+.submenu ul {
+	padding-top: 4px;
+}
+.submenu li {
+	display: inline;
+	cursor: pointer;
+	border: 1px solid rgba(0,0,0,0.3);
+	background: white;
+	box-shadow: inset 0px -2px 3px rgba(0,0,0,0.3);
+	padding: 5px;
+	margin: 2px;
+	border-radius: 4px;
+}
+.submenu li:active {
+	box-shadow: inset 0px 2px 3px rgba(0,0,0,0.3);
+}

@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="Televisions.aspx.cs" Inherits="Hometheaterbuilderv2.TelevisionsPage" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="bodycontent" runat="server">
-    <asp:ScriptManager ID="scm" runat="server" EnablePageMethods="true" />
+<asp:Content ID="Content2" ContentPlaceHolderID="head_content" runat="server">
     <script type="text/javascript">
         $(function () {
             PageMethods.GetTelevisions(0, onGetTelevisions);
@@ -9,7 +8,7 @@
                 "bJQueryUI": true,
                 "sPaginationType": "full_numbers",
                 "aoColumns": [
-                    { "mData": "Thumbnail"},
+                    { "mData": "Thumbnail" },
                     { "mData": "Title" },
                     { "mData": "AverageRating" },
                     { "mData": "Discount" },
@@ -25,14 +24,10 @@
             $("#dataTable").dataTable().fnAddData(products, true);
         }
     </script>
+</asp:Content>
 
-    <div class="headerorange" style=" margin-top: -8px;" >
-        <ul class="ulSubMenu" style="cursor:pointer" runat="server" id="UlSubMenu"></ul>    
-    </div>
-
-    <div style="padding-left: 14px; color: white; float: left; margin-left: 276px; margin-top: -60px; padding-left: 14px;">
-        Televisions
-    </div>
+<asp:Content ID="Content1" ContentPlaceHolderID="bodycontent" runat="server">
+    <asp:ScriptManager ID="scm" runat="server" EnablePageMethods="true" />
 
     <div style="width:100%;margin-top:15px;">
         <div style="width:100%;border:1px;padding-left:5%;padding-right:5%;">   
